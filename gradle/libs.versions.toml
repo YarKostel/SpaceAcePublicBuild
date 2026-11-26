@@ -1,0 +1,26 @@
+[versions]
+kotlin = "2.2.20"
+agp = "8.7.3"
+# KTX 1.13.1-rc1 — последний релиз KTX, собран против libGDX 1.13.1. Версии держим синхронными.
+gdx = "1.13.1"
+ktx = "1.13.1-rc1"
+junit = "5.11.4"
+
+[libraries]
+gdx-core = { module = "com.badlogicgames.gdx:gdx", version.ref = "gdx" }
+gdx-box2d = { module = "com.badlogicgames.gdx:gdx-box2d", version.ref = "gdx" }
+gdx-freetype = { module = "com.badlogicgames.gdx:gdx-freetype", version.ref = "gdx" }
+gdx-backend-lwjgl3 = { module = "com.badlogicgames.gdx:gdx-backend-lwjgl3", version.ref = "gdx" }
+gdx-backend-android = { module = "com.badlogicgames.gdx:gdx-backend-android", version.ref = "gdx" }
+
+ktx-app = { module = "io.github.libktx:ktx-app", version.ref = "ktx" }
+ktx-assets = { module = "io.github.libktx:ktx-assets", version.ref = "ktx" }
+ktx-box2d = { module = "io.github.libktx:ktx-box2d", version.ref = "ktx" }
+ktx-graphics = { module = "io.github.libktx:ktx-graphics", version.ref = "ktx" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-application = { id = "com.android.application", version.ref = "agp" }
